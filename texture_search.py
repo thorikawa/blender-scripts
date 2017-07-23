@@ -8,7 +8,7 @@ bl_info = {
 	"author": "Takahiro Poly Horikawa",
 	"version": (0, 0, 1),
 	"blender": (2, 78, 0),
-	"location": "View3D > Specials",
+	"location": "3D View > Object",
 	"warning": "",
 	"wiki_url": "",
 	"category": "3D View"
