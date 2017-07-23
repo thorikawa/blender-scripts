@@ -5,8 +5,10 @@
 import bpy
 import os
 
+MAX_DEPTH = 5
+
 def search_rec(root, file_name, depth = 0):
-	if depth == 5:
+	if depth >= MAX_DEPTH:
 		return None
 	for f in os.listdir(root):
 		path = os.path.join(root, f)
