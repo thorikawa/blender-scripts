@@ -6,7 +6,7 @@ bl_info = {
 	"name": "Image Reassigner",
 	"description": "Search and reassign image file of image object of missing file.",
 	"author": "Takahiro Poly Horikawa",
-	"version": (0, 0, 1),
+	"version": (0, 0, 2),
 	"blender": (2, 78, 0),
 	"location": "3D View > Object",
 	"warning": "",
@@ -72,7 +72,7 @@ def search_rec(root, file_name, depth = 0):
 			if not res is None:
 				return res
 		else:
-			if f == file_name:
+			if f.lower() == file_name.lower():
 				return path
 	return None
 
